@@ -5,4 +5,4 @@ def fizzbuzz(num):
         return "Buzz"
 
 for multiple in range(1, 101):
-    print(fizzbuzz(multiple))
+    return fizzbuzz(multiple)
