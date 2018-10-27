@@ -1,5 +1,7 @@
-def fizzbuzz(num):
 
+def fizzbuzz(num):
+    """FizzBuzz in Python evaluate multiple of 3 and 5"""
+    
     if num < 0: # evaluar num negative   raise personalizada
         raise Exception('Negative numbers no accepted')
 
