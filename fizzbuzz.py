@@ -3,6 +3,8 @@ def fizzbuzz(num):
         return True
     elif num % 5 == 0:
         return True
+    elif num % 3 and num % 5 == 0:
+        return True
 
-# for multiple in range(1, 101):
-#     print(fizzbuzz(multiple))
+for multiple in range(1, 101):
+    print(fizzbuzz(multiple))
