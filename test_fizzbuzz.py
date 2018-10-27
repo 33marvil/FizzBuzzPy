@@ -23,12 +23,17 @@ class FizzBuzzTestCase(unittest.TestCase):
 
     def test_negative_numbers(self):
         """Is a negative number correctly determined not to be multiple"""
-        for index in range(-1, -10, -1):
-            self.assertFalse(fizzbuzz(index), msg='{} Negative numbers no accepted'.format(index))
 
+        with self.assertRaises(Exception) as ctx: # rais Exception custum, ctx es una variable
+            for index in range(-1, -10, -1): # evaluacion
+                fizzbuzz(index)
+        self.assertEqual("Negative numbers no accepted" , str(ctx.exception))
 
-
-
+    def test_zero_not_multiple(self):
+        """Is not zero number determined to be multiple"""
+        with self.assertRaises(TypeError):
+            fizzbuzz(0)
+            #self.asserTrue(fizzbuzz(0))
 
 if __name__ == '__main__':
     unittest.main()
