@@ -11,11 +11,15 @@ class FizzBuzzTestCase(unittest.TestCase):
 
     def test_is_multiple_of_5(self):
         """is multiple of five return Buzz"""
-        self.assertTrue(fizzbuzz(30))
+        self.assertTrue(fizzbuzz(45))
 
     def test_is_multiple_both_of_them_3_and_5(self):
         """is multiple both of them 3 and 5 return FizzBuzz"""
         self.assertTrue(fizzbuzz(15))
+
+    def Test_is_not_multiple_of_3_and_5(self):
+        """is not multiple of 3 and 5 return you value"""
+        self.assertTrue(fizzbuzz(28))
 
 
 

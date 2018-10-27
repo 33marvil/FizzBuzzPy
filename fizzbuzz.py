@@ -1,10 +1,12 @@
 def fizzbuzz(num):
-    if num % 3 == 0:
-        return True
+    if num % 3 == 0 and num % 5 == 0:
+        return "FizzBuzz"
+    elif num % 3 == 0:
+        return "Fizz"
     elif num % 5 == 0:
-        return True
-    elif num % 3 and num % 5 == 0:
-        return True
+        return "Buzz"
+    else:
+        return num
 
 for multiple in range(1, 101):
     print(fizzbuzz(multiple))
