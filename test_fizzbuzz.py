@@ -9,9 +9,9 @@ class FizzBuzzTestCase(unittest.TestCase):
         """is multiple of three return Fizz"""
         self.assertTrue(fizzbuzz(27))
 
-    # def test_is_multiple_of_5(self):
-    #     """is multiple of five return Buzz"""
-    #     self.assertTrue(fizzbuzz(30))
+    def test_is_multiple_of_5(self):
+        """is multiple of five return Buzz"""
+        self.assertTrue(fizzbuzz(30))
     #
     # def test_is_(arg):
     #     pass

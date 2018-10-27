@@ -1,8 +1,8 @@
 def fizzbuzz(num):
     if num % 3 == 0:
-        return "Fizz"
+        return True
     elif num % 5 == 0:
-        return "Buzz"
+        return True
 
-for multiple in range(1, 101):
-    return fizzbuzz(multiple)
+# for multiple in range(1, 101):
+#     print(fizzbuzz(multiple))
